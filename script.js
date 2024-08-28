@@ -1,5 +1,9 @@
 console.log('JS OK')
 
+const list = document.getElementById('member-list')
+
+let items = '';
+
 // * MILESTONE 0:
 // Creare l’array di oggetti con le informazioni fornite.
 
@@ -13,7 +17,18 @@ const ourTeam = [
     ]
 // *MILESTONE 1:
 // Stampare su console le informazioni di nome, ruolo e la stringa della foto
-
-for(let member of ourTeam)
-    console.log(`Nome del membro ${member.name} , cognome  ${member.lastname} Lavoro  ${member.name} e foto ${member.photo}`)
+// *MILESTONE 2:
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
     
+
+for(let member of ourTeam){
+    items += `
+    <li>${member.name} ${member.lastname}<li>
+    <li>${member.job}<li>
+    <li>${member.photo}<li>
+    `
+
+    console.log(`Nome del membro ${member.name} , cognome  ${member.lastname} Lavoro  ${member.job} e foto ${member.photo}`)
+}
+    
+  list.innerHTML = items;
