@@ -11,3 +11,9 @@ const ourTeam = [
         {name: 'Scott' , lastname: 'Estrada' , job: 'Developer' , photo: 'scott-estrada-developer.jpg'},
         {name: 'Barbara' , lastname: 'Ramos' , job: 'Graphic Designer' , photo: 'barbara-ramos-graphic-designer.jpg'},
     ]
+// *MILESTONE 1:
+// Stampare su console le informazioni di nome, ruolo e la stringa della foto
+
+for(let member of ourTeam)
+    console.log(`Nome del membro ${member.name} , cognome  ${member.lastname} Lavoro  ${member.name} e foto ${member.photo}`)
+    
