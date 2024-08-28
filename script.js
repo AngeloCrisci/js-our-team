@@ -23,11 +23,10 @@ const ourTeam = [
 
 for(let member of ourTeam){
     items += `
-    <li>${member.name} ${member.lastname}<li>
-    <li>${member.job}<li>
-    <li>${member.photo}<li>
+    <li>${member.name} ${member.lastname}</li>
+    <li>${member.job}</li>
+    <li>${member.photo}</li>
     `
-
     console.log(`Nome del membro ${member.name} , cognome  ${member.lastname} Lavoro  ${member.job} e foto ${member.photo}`)
 }
     
